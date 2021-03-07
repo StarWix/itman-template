@@ -1,6 +1,6 @@
-package lesson1;
+package example;
 
-public class Task1 {
+public class Example {
     public static int sum(int a, int b) {
         return a + b;
     }
