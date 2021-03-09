@@ -12,10 +12,11 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
+test {
+    jvmArgs = ["-Duser.timezone=UTC", "-Duser.language=en"]
+    useJUnitPlatform()
 }
 
-test {
-    useJUnitPlatform()
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
 }
